@@ -121,7 +121,7 @@ class Datepicker extends InputWidget
         DateAsset::register($view);
 
         if ($this->theme === 'default') {
-            DatePickerAsset::register($view);
+            DatepickerAsset::register($view);
         } else {
             $this->{'registerDatepicker' . ucfirst($this->theme) . 'ThemeAsset'}($view);
         }
