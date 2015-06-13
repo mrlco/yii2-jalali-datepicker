@@ -49,10 +49,10 @@ class Datepicker extends InputWidget
     public $size;
 
     /**
-     * @var string the addon markup if you wish to display the input as a component. If you don't wish to render as a
-     * component then set it to null or false.
+     * @var string the addon markup if you wish to display the input as a component then set it to
+     * something like '<i class="glyphicon glyphicon-calendar"></i>'.
      */
-    public $addon = '<i class="glyphicon glyphicon-calendar"></i>';
+    public $addon = false;
 
     /**
      * @var string the template to render the input.
@@ -130,7 +130,7 @@ class Datepicker extends InputWidget
         $id = $this->options['id'];
         $selector = ";jQuery('#$id')";
 
-        if ($this->addon || $this->inline) {
+        if ($this->inline) {
             $selector .= ".parent()";
         }
 
