@@ -18,7 +18,7 @@ class DateAsset extends AssetBundle
 {
     public $sourcePath = '@bower/persian-date/dist';
     public $js = [
-        '0.1.8/an-date-0.1.8.js',
+        '0.1.8/persian-date-0.1.8.js',
     ];
     public $depends = [
         'yii\web\JqueryAsset',
