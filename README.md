@@ -22,11 +22,7 @@ to the require section of your application's `composer.json` file.
 
 Usage
 -----
-The widget comes in two flavors: 
-
-- DatePicker
-- DateRangePicker
-.
+comming soon...
 
 
 Credits
