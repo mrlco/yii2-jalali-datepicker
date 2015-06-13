@@ -16,7 +16,7 @@ use yii\web\AssetBundle;
  */
 class DatepickerDarkThemeAsset extends AssetBundle
 {
-    public $sourcePath = '@bower/persian-date/dist';
+    public $sourcePath = '@bower/persian-datepicker/dist';
     public $css = [
         'css/theme/persian-datepicker-dark.css',
     ];
