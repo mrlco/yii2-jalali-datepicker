@@ -46,7 +46,7 @@ use mrlco\datepicker\Datepicker;
     'attribute' => 'date',
     'template' => '{addon}{input}',
         'clientOptions' => [
-            'format' => 'yyyy/mm/dd'
+            'format' => 'YYYY/MM/DD'
         ]
 ]);?>
 ```
@@ -59,7 +59,7 @@ use mrlco\datepicker\Datepicker;
         'inline' => true,
         'template' => '<div class="well well-sm" style="background-color: #fff; width:250px">{input}</div>',
         'clientOptions' => [
-            'format' => 'yyyy/mm/dd'
+            'format' => 'YYYY/MM/DD'
         ]
 ]);?>
 ```
@@ -74,7 +74,7 @@ use mrlco\datepicker\Datepicker;
     'value' => '1394/03/23',
     'template' => '{addon}{input}',
         'clientOptions' => [
-            'format' => 'yyyy/mm/dd'
+            'format' => 'YYYY/MM/DD'
         ]
 ]);?>
 ```
