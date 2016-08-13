@@ -16,7 +16,6 @@ use yii\web\AssetBundle;
  */
 class DatepickerBlueThemeAsset extends AssetBundle
 {
-    public $sourcePath = '@bower/persian-datepicker/dist';
     public $css = [
         'css/theme/persian-datepicker-blue.css',
     ];
@@ -26,4 +25,10 @@ class DatepickerBlueThemeAsset extends AssetBundle
     public $depends = [
         'mrlco\datepicker\DateAsset',
     ];
+    public function init()
+    {
+        $s = DIRECTORY_SEPARATOR;
+        $this->sourcePath = "@bower{$s}persian-date{$s}dist";
+        parent::init();
+    }
 }

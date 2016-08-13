@@ -16,7 +16,6 @@ use yii\web\AssetBundle;
  */
 class DatepickerCheerupThemeAsset extends AssetBundle
 {
-    public $sourcePath = '@bower/persian-datepicker/dist';
     public $css = [
         'css/theme/persian-datepicker-cheerup.css',
     ];
@@ -26,4 +25,10 @@ class DatepickerCheerupThemeAsset extends AssetBundle
     public $depends = [
         'mrlco\datepicker\DateAsset',
     ];
+    public function init()
+    {
+        $s = DIRECTORY_SEPARATOR;
+        $this->sourcePath = "@bower{$s}persian-date{$s}dist";
+        parent::init();
+    }
 }

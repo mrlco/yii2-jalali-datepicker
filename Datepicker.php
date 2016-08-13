@@ -126,7 +126,6 @@ class Datepicker extends InputWidget
             $this->{'registerDatepicker' . ucfirst($this->theme) . 'ThemeAsset'}($view);
         }
 
-
         $id = $this->options['id'];
         $selector = ";jQuery('#$id')";
 
