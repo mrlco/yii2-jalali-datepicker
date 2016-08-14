@@ -28,7 +28,7 @@ class DatepickerDarkThemeAsset extends AssetBundle
     public function init()
     {
         $s = DIRECTORY_SEPARATOR;
-        $this->sourcePath = "@bower{$s}persian-date{$s}dist";
+        $this->sourcePath = "@bower{$s}persian-datepicker{$s}dist";
         parent::init();
     }
 }
