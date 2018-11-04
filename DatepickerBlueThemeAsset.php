@@ -21,7 +21,7 @@ class DatepickerBlueThemeAsset extends AssetBundle
         'css/theme/persian-datepicker-blue.css',
     ];
     public $js = [
-        'js/persian-datepicker-0.4.5.js',
+        'js/persian-datepicker.min.js',
     ];
     public $depends = [
         'mrlco\datepicker\DateAsset',
