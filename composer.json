@@ -24,7 +24,7 @@
   ],
   "require": {
     "yiisoft/yii2": "~2.0.0",
-    "bower-asset/persian-datepicker": "~0.4.5"
+    "bower-asset/persian-datepicker": "1.1.2"
   },
   "autoload": {
     "psr-4": {
