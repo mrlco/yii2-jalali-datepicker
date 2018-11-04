@@ -18,10 +18,10 @@ class DatepickerAsset extends AssetBundle
 {
     public $sourcePath = "@bower/persian-datepicker/dist";
     public $css = [
-        'css/persian-datepicker-0.4.5.css',
+        'css/persian-datepicker.min.css',
     ];
     public $js = [
-        'js/persian-datepicker-0.4.5.js',
+        'js/persian-datepicker.min.js',
     ];
     public $depends = [
         'mrlco\datepicker\DateAsset',
