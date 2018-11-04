@@ -21,7 +21,7 @@ class DatepickerCheerupThemeAsset extends AssetBundle
         'css/theme/persian-datepicker-cheerup.css',
     ];
     public $js = [
-        'js/persian-datepicker-0.4.5.js',
+        'js/persian-datepicker.min.js',
     ];
     public $depends = [
         'mrlco\datepicker\DateAsset',
