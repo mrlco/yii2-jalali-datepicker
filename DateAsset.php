@@ -22,7 +22,7 @@ class DateAsset extends AssetBundle
     ];
     public $depends = [
         'yii\web\JqueryAsset',
-        'yii\bootstrap\BootstrapPluginAsset',
-        'yii\bootstrap\BootstrapAsset',
+        'yii\bootstrap4\BootstrapPluginAsset',
+        'yii\bootstrap4\BootstrapAsset',
     ];
 }

@@ -8,7 +8,8 @@
     "yii2-jalali-datepicker",
     "yii2-hijri-datepicker",
     "yii2 persian datepicker",
-    "yii2 persian bootstrap datepicker",
+    "yii2 persian bootstrap 3 datepicker",
+    "yii2 persian bootstrap 4 datepicker",
     "yii2 jalali bootstrap datepicker",
     "yii2 hijri bootstrap datepicker"
   ],
@@ -24,6 +25,7 @@
   ],
   "require": {
     "yiisoft/yii2": "~2.0.0",
+    "yiisoft/yii2-bootstrap4": "^2.0",
     "bower-asset/persian-datepicker": "1.2.0"
   },
   "autoload": {
@@ -34,10 +36,8 @@
   "config": {
     "process-timeout": 1800,
     "fxp-asset": {
-      "installer-paths": {
-        "npm-asset-library": "vendor/npm",
-        "bower-asset-library": "vendor/bower"
-      }
-    }
-  }
+      "enabled": false
+    },
+    "optimize-autoloader": true
+  },
 }
