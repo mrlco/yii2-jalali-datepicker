@@ -44,20 +44,26 @@ class Datepicker extends InputWidget
     public $theme = 'default';
 
     /**
-     * @var string the size of the input ('lg', 'md', 'sm', 'xs')
+     * @var string the size of the input ('lg', 'sm')
      */
     public $size;
 
     /**
-     * @var string the addon markup if you wish to display the input as a component then set it to
-     * something like '<i class="glyphicon glyphicon-calendar"></i>'.
+     * @var string the prepend addon markup if you wish to display the input as a component then set it to
+     * something like '<span class="input-group-text">Sample Text</span>'.
      */
-    public $addon = false;
+    public $prependAddon = false;
+
+    /**
+     * @var string the append addon markup if you wish to display the input as a component then set it to
+     * something like '<span class="input-group-text">Sample Text</span>'.
+     */
+    public $appendAddon = false;
 
     /**
      * @var string the template to render the input.
      */
-    public $template = '{input}{addon}';
+    public $template = '{prepend}{input}{append}';
 
     /**
      * @var bool whether to render the input as an inline calendar
@@ -96,9 +102,15 @@ class Datepicker extends InputWidget
         if ($this->inline) {
             $input .= '<div></div>';
         }
-        if ($this->addon && !$this->inline) {
-            $addon = Html::tag('span', $this->addon, ['class' => 'input-group-addon']);
-            $input = strtr($this->template, ['{input}' => $input, '{addon}' => $addon]);
+        if (($this->prependAddon || $this->appendAddon) && !$this->inline) {
+            $prepend = $append = '';
+            if ($this->prependAddon) {
+                $prepend = Html::tag('span', $this->prependAddon, ['class' => 'input-group-prepend']);
+            }
+            if ($this->appendAddon) {
+                $append = Html::tag('span', $this->appendAddon, ['class' => 'input-group-append']);
+            }
+            $input = strtr($this->template, ['{prepend}' => $prepend, '{input}' => $input, '{append}' => $append]);
             $input = Html::tag('div', $input, $this->containerOptions);
         }
         if ($this->inline) {
